@@ -11,6 +11,7 @@
 		AAFFC1A6223AA05300574091 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAFFC1A2223AA05300574091 /* bubbles.wav */; };
 		AAFFC1A7223AA05300574091 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAFFC1A3223AA05300574091 /* guitar.wav */; };
 		AAFFC1A8223AA05300574091 /* monster.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAFFC1A4223AA05300574091 /* monster.wav */; };
+		AAFFC1AB223ADEC300574091 /* NoiseMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFC1AA223ADEC300574091 /* NoiseMaker.swift */; };
 		F9087F461B1A37AC00767FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9087F451B1A37AC00767FD3 /* AppDelegate.swift */; };
 		F9087F481B1A37AC00767FD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9087F471B1A37AC00767FD3 /* ViewController.swift */; };
 		F9087F4B1B1A37AC00767FD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9087F491B1A37AC00767FD3 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		AAFFC1A2223AA05300574091 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
 		AAFFC1A3223AA05300574091 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		AAFFC1A4223AA05300574091 /* monster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monster.wav; sourceTree = "<group>"; };
+		AAFFC1AA223ADEC300574091 /* NoiseMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseMaker.swift; sourceTree = "<group>"; };
 		F9087F401B1A37AC00767FD3 /* NoiseMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoiseMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9087F441B1A37AC00767FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9087F451B1A37AC00767FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				F9087F451B1A37AC00767FD3 /* AppDelegate.swift */,
 				F9087F471B1A37AC00767FD3 /* ViewController.swift */,
 				F9087F491B1A37AC00767FD3 /* Main.storyboard */,
+				AAFFC1AA223ADEC300574091 /* NoiseMaker.swift */,
 				F9087F4C1B1A37AC00767FD3 /* Images.xcassets */,
 				F9087F4E1B1A37AC00767FD3 /* LaunchScreen.xib */,
 				F9087F431B1A37AC00767FD3 /* Supporting Files */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9087F481B1A37AC00767FD3 /* ViewController.swift in Sources */,
+				AAFFC1AB223ADEC300574091 /* NoiseMaker.swift in Sources */,
 				F9087F461B1A37AC00767FD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
