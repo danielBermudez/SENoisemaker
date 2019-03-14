@@ -32,7 +32,7 @@
                                 <rect key="frame" x="208.5" y="218.5" width="64" height="30"/>
                                 <state key="normal" title="Applause"/>
                                 <connections>
-                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYw-tC-tFF"/>
+                                    <action selector="playApplause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaV-mP-bZy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
