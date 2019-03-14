@@ -6,9 +6,9 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 */
 
 import UIKit
-
+import AVFoundation
 class ViewController: UIViewController {
-
+    var player : AVAudioPlayer?
     @IBAction func playGuitar(_ sender: UIButton) {
     }
     
