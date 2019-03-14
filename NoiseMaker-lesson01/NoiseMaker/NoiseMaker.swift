@@ -31,6 +31,11 @@ class Noisemaker{
         }
         
             }
+    func  initWithSoundFileNames(names : [String]){
+        for i in names.indices {
+            
+        }
+    }
     
     func playGuitar() {
             guitarPlayer?.play()
