@@ -25,28 +25,28 @@
                                 <rect key="frame" x="116.5" y="218.5" width="42" height="30"/>
                                 <state key="normal" title="Guitar"/>
                                 <connections>
-                                    <action selector="playGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPt-af-yvR"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdC-kZ-cu5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
                                 <rect key="frame" x="208.5" y="218.5" width="64" height="30"/>
                                 <state key="normal" title="Applause"/>
                                 <connections>
-                                    <action selector="playApplause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYw-tC-tFF"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bK-ia-ZRX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
-                                <rect key="frame" x="216" y="353.5" width="48" height="30"/>
-                                <state key="normal" title="Bubble"/>
+                                <rect key="frame" x="216" y="353.5" width="56" height="30"/>
+                                <state key="normal" title="Bubbles"/>
                                 <connections>
-                                    <action selector="playBubbles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0O-TU-bog"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8P-Vb-9VW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
                                 <rect key="frame" x="109" y="353.5" width="57" height="30"/>
                                 <state key="normal" title="Monster"/>
                                 <connections>
-                                    <action selector="playMonster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyu-Fm-EVA"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSf-5v-s2r"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,6 +62,12 @@
                             <constraint firstItem="mKh-KZ-uuv" firstAttribute="top" secondItem="Emv-hh-4h6" secondAttribute="bottom" constant="105" id="ky4-Aq-qxQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="applause" destination="Emv-hh-4h6" id="NPw-yp-wpj"/>
+                        <outlet property="bubble" destination="mKh-KZ-uuv" id="pbR-Lf-bCk"/>
+                        <outlet property="guitar" destination="Iih-0g-USc" id="yNO-U7-VfV"/>
+                        <outlet property="monster" destination="Za8-l3-D7N" id="BJR-PB-ldF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,12 +9,24 @@ import UIKit
 import AVFoundation
 class ViewController: UIViewController {
     var player : AVAudioPlayer?
+    
+    @IBOutlet weak var bubble: UIButton!
+    @IBOutlet weak var monster: UIButton!
+    @IBOutlet weak var applause: UIButton!
+    @IBOutlet weak var guitar: UIButton!
+    
     @IBAction func playSound(_ sender: UIButton) {
-        if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav"){
-            player = try? AVAudioPlayer(contentsOf: url)
-            player?.play()
-        }
         
+        let soundAction: (String) -> Void = { [weak self] sound in
+            if let url = Bundle.main.url(forResource: sound, withExtension: "wav"){
+                self?.player = try? AVAudioPlayer(contentsOf: url)
+                self?.player?.play()
+            }
+        }
+
+        guard let soundName = sender.titleLabel?.text?.lowercased() else { return }
+        
+        soundAction(soundName)
     }
     
     
