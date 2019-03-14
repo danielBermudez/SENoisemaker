@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBAction func playGuitar(_ sender: UIButton) {
         if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav"){
             guitarPlayer = try? AVAudioPlayer(contentsOf: url)
-            
             guitarPlayer?.play()
             
         }
