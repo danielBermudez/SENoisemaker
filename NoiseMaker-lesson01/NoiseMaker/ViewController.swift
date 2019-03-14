@@ -9,6 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func playGuitar(_ sender: UIButton) {
+    }
+    
+    @IBAction func playApplause(_ sender: UIButton) {
+    }
+    @IBAction func playMonster(_ sender: UIButton) {
+    }
+    @IBAction func playBubbles(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
