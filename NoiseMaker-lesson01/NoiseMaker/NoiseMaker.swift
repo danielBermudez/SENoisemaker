@@ -9,10 +9,10 @@
 import Foundation
 import AVFoundation
 class Noisemaker{
-    let audioFileNames = ["guitar","applause","monster","bubbles"]
+   
     let  players : [AVAudioPlayer?]
     
-    init(){
+    init(audioFileNames: [String]){
         players = audioFileNames.map( { filename  in
             if let url = Bundle.main.url(forResource: filename, withExtension: "wav") {
                return try? AVAudioPlayer(contentsOf: url)
@@ -21,6 +21,8 @@ class Noisemaker{
             }
         })
     }
+   
+    
     func playGuitar() {
             players[0]?.play()
     }

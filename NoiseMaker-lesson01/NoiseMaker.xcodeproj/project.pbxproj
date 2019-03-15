@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAA338C0223BE66400357F0C /* AudioFileNames.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA338BF223BE66300357F0C /* AudioFileNames.plist */; };
 		AAFFC1A5223AA05300574091 /* applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAFFC1A1223AA05300574091 /* applause.wav */; };
 		AAFFC1A6223AA05300574091 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAFFC1A2223AA05300574091 /* bubbles.wav */; };
 		AAFFC1A7223AA05300574091 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAFFC1A3223AA05300574091 /* guitar.wav */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAA338BF223BE66300357F0C /* AudioFileNames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AudioFileNames.plist; sourceTree = "<group>"; };
 		AAFFC1A1223AA05300574091 /* applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause.wav; sourceTree = "<group>"; };
 		AAFFC1A2223AA05300574091 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
 		AAFFC1A3223AA05300574091 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				AAFFC1AA223ADEC300574091 /* NoiseMaker.swift */,
 				F9087F4C1B1A37AC00767FD3 /* Images.xcassets */,
 				F9087F4E1B1A37AC00767FD3 /* LaunchScreen.xib */,
+				AAA338BF223BE66300357F0C /* AudioFileNames.plist */,
 				F9087F431B1A37AC00767FD3 /* Supporting Files */,
 			);
 			path = NoiseMaker;
@@ -214,6 +217,7 @@
 				AAFFC1A7223AA05300574091 /* guitar.wav in Resources */,
 				F9087F4B1B1A37AC00767FD3 /* Main.storyboard in Resources */,
 				AAFFC1A6223AA05300574091 /* bubbles.wav in Resources */,
+				AAA338C0223BE66400357F0C /* AudioFileNames.plist in Resources */,
 				F9087F501B1A37AC00767FD3 /* LaunchScreen.xib in Resources */,
 				F9087F4D1B1A37AC00767FD3 /* Images.xcassets in Resources */,
 				AAFFC1A5223AA05300574091 /* applause.wav in Resources */,
