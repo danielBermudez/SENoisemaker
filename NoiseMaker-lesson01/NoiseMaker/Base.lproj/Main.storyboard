@@ -21,30 +21,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-0g-USc">
-                                <rect key="frame" x="116.5" y="218.5" width="42" height="30"/>
-                                <state key="normal" title="Guitar"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-0g-USc">
+                                <rect key="frame" x="72.5" y="188.5" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.78191620111465454" green="0.52381497621536255" blue="0.90199375152587891" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays guitar sound" label="Guitar">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <state key="normal" image="GuitarIcon"/>
                                 <connections>
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rkb-9g-HGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
-                                <rect key="frame" x="208.5" y="218.5" width="64" height="30"/>
-                                <state key="normal" title="Applause"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
+                                <rect key="frame" x="212.5" y="188.5" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.68838435411453247" green="0.46464747190475464" blue="0.84709244966506958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays applause sound" label="Applause ">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <state key="normal" image="ApplauseIcon"/>
                                 <connections>
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucW-Gq-pft"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
-                                <rect key="frame" x="216" y="353.5" width="48" height="30"/>
-                                <state key="normal" title="Bubble"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
+                                <rect key="frame" x="212.5" y="383.5" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.60675442218780518" green="0.39693737030029297" blue="0.80787879228591919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" hint="Play bubbles sound " label="bubbles">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <state key="normal" image="BubblesIcon"/>
                                 <connections>
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJ8-53-bBQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
-                                <rect key="frame" x="109" y="353.5" width="57" height="30"/>
-                                <state key="normal" title="Monster"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
+                                <rect key="frame" x="72.5" y="383.5" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.50981217622756958" green="0.31674301624298096" blue="0.76474356651306152" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays monster sound" label="monster">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <state key="normal" image="MonsterIcon"/>
                                 <connections>
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N27-pp-sPQ"/>
                                 </connections>
@@ -52,11 +68,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Iih-0g-USc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="BeY-Ag-14N"/>
+                            <constraint firstItem="Iih-0g-USc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-70" id="BeY-Ag-14N"/>
                             <constraint firstItem="Emv-hh-4h6" firstAttribute="leading" secondItem="Iih-0g-USc" secondAttribute="trailing" constant="50" id="GqR-sd-xlh"/>
                             <constraint firstItem="Za8-l3-D7N" firstAttribute="top" secondItem="Iih-0g-USc" secondAttribute="bottom" constant="105" id="Q9d-yh-N8Y"/>
                             <constraint firstItem="Emv-hh-4h6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="Qli-VT-3Se"/>
-                            <constraint firstItem="Za8-l3-D7N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="Xmo-hQ-f7q"/>
+                            <constraint firstItem="Za8-l3-D7N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-70" id="Xmo-hQ-f7q"/>
                             <constraint firstItem="mKh-KZ-uuv" firstAttribute="leading" secondItem="Za8-l3-D7N" secondAttribute="trailing" constant="50" id="YCY-Vc-ulX"/>
                             <constraint firstItem="Iih-0g-USc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="avO-4O-XTZ"/>
                             <constraint firstItem="mKh-KZ-uuv" firstAttribute="top" secondItem="Emv-hh-4h6" secondAttribute="bottom" constant="105" id="ky4-Aq-qxQ"/>
@@ -67,4 +83,10 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ApplauseIcon" width="90" height="90"/>
+        <image name="BubblesIcon" width="90" height="90"/>
+        <image name="GuitarIcon" width="90" height="90"/>
+        <image name="MonsterIcon" width="90" height="90"/>
+    </resources>
 </document>
