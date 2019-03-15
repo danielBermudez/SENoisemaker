@@ -9,45 +9,35 @@
 import Foundation
 import AVFoundation
 class Noisemaker{
-    private var guitarPlayer : AVAudioPlayer?
-    private var applausePlayer : AVAudioPlayer?
-    private var monsterPlayer : AVAudioPlayer?
-    private var bubblesPlayer : AVAudioPlayer?
+    
+    private var audioPlayers = [String: AVAudioPlayer?]()
+    private let soundNames = ["guitar","applause","monster","bubbles"]
     init(){
-        if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav"){
-            guitarPlayer = try? AVAudioPlayer(contentsOf: url)
+        initWithSoundFileNames(names: soundNames)
         }
-        
-        if let url2 = Bundle.main.url(forResource: "applause", withExtension: "wav"){
-            applausePlayer = try? AVAudioPlayer(contentsOf: url2)
-        }
-        
-        if let url3 = Bundle.main.url(forResource: "monster", withExtension: "wav"){
-            monsterPlayer = try? AVAudioPlayer(contentsOf: url3)
-        }
-        
-        if let url4 = Bundle.main.url(forResource: "bubbles", withExtension: "wav"){
-            bubblesPlayer = try? AVAudioPlayer(contentsOf: url4)
-        }
-        
-            }
+    
     func  initWithSoundFileNames(names : [String]){
         for i in names.indices {
-            
+            if let url = Bundle.main.url(forResource: names[i], withExtension: "wav"){
+                audioPlayers[names[i]] = try? AVAudioPlayer(contentsOf: url )
+            }
         }
     }
     
     func playGuitar() {
-            guitarPlayer?.play()
+         audioPlayers["guitar"]!?.play()
+
     }
     
    func playApplause() {
-            applausePlayer?.play()
+            audioPlayers["applause"]!?.play()
     }
+    
      func playMonster() {
-            monsterPlayer?.play()
+          audioPlayers["monster"]!?.play()
     }
+    
     func playBubbles() {
-            bubblesPlayer?.play()
+           audioPlayers["bubbles"]!?.play()
     }
 }
