@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-0g-USc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iih-0g-USc">
                                 <rect key="frame" x="72.5" y="188.5" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.78191620111465454" green="0.52381497621536255" blue="0.90199375152587891" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" hint="Plays guitar sound" label="Guitar">
@@ -32,7 +32,7 @@
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rkb-9g-HGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
                                 <rect key="frame" x="212.5" y="188.5" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.68838435411453247" green="0.46464747190475464" blue="0.84709244966506958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" hint="Plays applause sound" label="Applause ">
@@ -43,18 +43,19 @@
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucW-Gq-pft"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
                                 <rect key="frame" x="212.5" y="383.5" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.60675442218780518" green="0.39693737030029297" blue="0.80787879228591919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" hint="Play bubbles sound " label="bubbles">
                                     <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
                                 </accessibility>
+                                <color key="tintColor" red="0.38556913339999999" green="0.85702489110000002" blue="0.94333755969999999" alpha="0.27694242299999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" image="BubblesIcon"/>
                                 <connections>
                                     <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJ8-53-bBQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
                                 <rect key="frame" x="72.5" y="383.5" width="90" height="90"/>
                                 <color key="backgroundColor" red="0.50981217622756958" green="0.31674301624298096" blue="0.76474356651306152" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <accessibility key="accessibilityConfiguration" hint="Plays monster sound" label="monster">
