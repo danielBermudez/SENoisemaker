@@ -10,18 +10,18 @@ import UIKit
 class ViewController: UIViewController {
     let noiseMaker = Noisemaker()
     @IBAction func playGuitar(_ sender: UIButton) {
-       noiseMaker.playGuitar()
+        noiseMaker.play(index: 0)
         
     }
     
     @IBAction func playApplause(_ sender: UIButton) {
-        noiseMaker.playApplause()
+        noiseMaker.play(index: 1)
     }
     @IBAction func playMonster(_ sender: UIButton) {
-       noiseMaker.playMonster()
+        noiseMaker.play(index: 2)
     }
     @IBAction func playBubbles(_ sender: UIButton) {
-        noiseMaker.playBubbles()
+         noiseMaker.play(index: 3)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

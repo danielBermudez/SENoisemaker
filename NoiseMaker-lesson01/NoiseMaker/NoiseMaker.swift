@@ -21,17 +21,10 @@ class Noisemaker{
             }
         })
     }
-    func playGuitar() {
-            players[0]?.play()
+    func play(index: Int) {
+        if !players.isEmpty && index >= 0 && index < players.count{
+             players[index]?.play()
+        }
     }
     
-   func playApplause() {
-            players[1]?.play()
-    }
-     func playMonster() {
-            players[2]?.play()
-    }
-    func playBubbles() {
-           players[3]?.play()
-    }
 }
