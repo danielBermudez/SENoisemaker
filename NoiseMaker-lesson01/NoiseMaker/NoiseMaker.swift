@@ -22,9 +22,16 @@ class Noisemaker{
         })
     }
     func play(index: Int) {
-        if !players.isEmpty && index >= 0 && index < players.count{
+        if validIndex(index: index){
              players[index]?.play()
-        }
+        } else {
+            let defaultPlayer = players[2]
+            defaultPlayer?.play()
+    }
     }
     
+    func validIndex(index : Int)-> Bool{
+        return (!players.isEmpty && index >= 0 && index < players.count)
+        
+    }
 }
