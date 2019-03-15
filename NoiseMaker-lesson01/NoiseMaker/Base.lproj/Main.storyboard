@@ -25,28 +25,28 @@
                                 <rect key="frame" x="116.5" y="218.5" width="42" height="30"/>
                                 <state key="normal" title="Guitar"/>
                                 <connections>
-                                    <action selector="playGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPt-af-yvR"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rkb-9g-HGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emv-hh-4h6">
                                 <rect key="frame" x="208.5" y="218.5" width="64" height="30"/>
                                 <state key="normal" title="Applause"/>
                                 <connections>
-                                    <action selector="playApplause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaV-mP-bZy"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucW-Gq-pft"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-KZ-uuv">
                                 <rect key="frame" x="216" y="353.5" width="48" height="30"/>
                                 <state key="normal" title="Bubble"/>
                                 <connections>
-                                    <action selector="playBubbles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0O-TU-bog"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJ8-53-bBQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-l3-D7N">
                                 <rect key="frame" x="109" y="353.5" width="57" height="30"/>
                                 <state key="normal" title="Monster"/>
                                 <connections>
-                                    <action selector="playMonster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyu-Fm-EVA"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N27-pp-sPQ"/>
                                 </connections>
                             </button>
                         </subviews>
